@@ -5,7 +5,7 @@ export default function Signature() {
     <div className="signature">
       Open-source code on{" "}
       <a
-        href="https://github.com/LeiaLL/SheCodesPlusFinalProject.git"
+        href="https://github.com/LeiaLL/ReactWeatherApp.git"
         target="_blank"
         rel="noreferrer"
       >
