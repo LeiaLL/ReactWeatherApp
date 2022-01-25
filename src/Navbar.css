@@ -1,0 +1,12 @@
+input {
+  background-color: #f1efef;
+  margin: 10px 5px 0;
+  font-size: 18px;
+  line-height: 2;
+  border: 2px solid #92a759;
+  border-radius: 5px;
+  padding: 2px;
+}
+.cityname {
+  width: 300px;
+}

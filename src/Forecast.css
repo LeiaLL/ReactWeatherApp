@@ -1,0 +1,38 @@
+.forecast {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+}
+
+.weatherEmoji {
+  font-size: 60px;
+  text-align: center;
+}
+
+.day {
+  font-size: 15px;
+  text-align: center;
+  color: #5a6275;
+}
+
+.day.today {
+  font-size: 17px;
+  color: #5a6275;
+}
+
+.highlow {
+  font-size: 15px;
+  text-align: center;
+  color: #5a6275;
+}
+
+.col.predicted {
+  transition: all 200ms ease-in-out;
+  border-radius: 5px;
+  padding: 7px 2px;
+}
+
+.col.predicted:hover {
+  background: rgb(212, 236, 221, 0.8);
+}
