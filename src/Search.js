@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import Forecast from "./Forecast";
 import Weatherdisplay from "./Weatherdisplay";
-import "./Navbar.css";
+import "./Search.css";
 
-export default function Navbar() {
+export default function Search() {
   let [ready, setReady] = useState(false);
   let [city, setCity] = useState(" ");
   let [weather, setWeather] = useState({});

@@ -13,7 +13,7 @@ export default function WeatherIcon(props) {
     icon = "⛅️";
   } else if (props.icon === "01d") {
     icon = "☀️";
-  } else if (icon === "01n") {
+  } else if (props.icon === "01n") {
     icon = "🌙 ";
   } else if (props.icon === "09n" || props.icon === "09d") {
     icon = "🌧";
