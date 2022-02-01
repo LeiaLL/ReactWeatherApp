@@ -1,25 +1,28 @@
 import React from "react";
+import FormattedDate from "./FormattedDate";
 import "./Weatherdisplay.css";
 
-export default function Weatherdisplay() {
+export default function Weatherdisplay(props) {
   return (
     <div className="Weatherdisplay">
       <div className="row">
         <div className="col-7">
           <section className="main">
             <h5>
-              <span> Leeds</span>,<span> GB</span>
+              <span> {props.weather.city}</span>,
+              <span> {props.weather.country}</span>
             </h5>
             <p className="weather">
-              <span className="weather">Last updated: Today 14:34pm</span>
-              <br />
-              <span className="weather">Partly Cloudy</span>
+              <span className="weather">
+                <FormattedDate date={props.weather.date} />
+              </span>
+              <span className="weather">{props.weather.description}</span>
             </p>
             <br />
             <h1>
               <strong>
                 <span className="current-weater-icon">☁️</span>
-                <span>17</span>°
+                <span>{props.weather.temperature}</span>°
               </strong>
               <span className="measurment">
                 <a href="/" className="active">
@@ -33,14 +36,14 @@ export default function Weatherdisplay() {
         <div className="col-5">
           <ul>
             <li>
-              Feels like: <span> 15</span> °C
+              Feels like: <span> {props.weather.feelsLike}</span> °C
             </li>
             <li>
-              Wind: <span> 3</span>
+              Wind: <span> {props.weather.wind}</span>
               <span> km/h </span>
             </li>
             <li>
-              Humidity: <span> 15</span> %
+              Humidity: <span> {props.weather.humidity}</span> %
             </li>
           </ul>
         </div>
