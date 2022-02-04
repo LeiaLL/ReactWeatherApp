@@ -1,8 +1,8 @@
 .forecast {
   display: block;
   margin: 0 auto;
-  position: relative;
   text-align: center;
+  position: relative;
   top: -40px;
 }
 
@@ -12,20 +12,17 @@
 }
 
 .day {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   color: #5a6275;
-}
-
-.day.today {
-  font-size: 17px;
-  color: #5a6275;
+  font-family: "Poppins", sans-serif;
 }
 
 .highlow {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   color: #5a6275;
+  padding-left: 7px;
 }
 
 .col.predicted {

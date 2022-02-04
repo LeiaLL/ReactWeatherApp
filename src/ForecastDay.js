@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import "./ForecastDay.css";
 
 export default function ForecastDay(props) {
   function maxTemperature() {
@@ -33,7 +34,9 @@ export default function ForecastDay(props) {
   if (props.index === 0) {
     return (
       <div>
-        <div className="day">Today</div>
+        <div className="day today">
+          <strong> Today </strong>
+        </div>
         <div className="weatherEmoji">
           {" "}
           <WeatherIcon icon={props.forecast.weather[0].icon} />

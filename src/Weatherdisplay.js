@@ -17,7 +17,7 @@ export default function Weatherdisplay(props) {
               <span className="weather">
                 <FormattedDate />
               </span>
-              <span className="weather text-capitalize">
+              <span className="weather description text-capitalize">
                 {props.weather.description}
               </span>
             </p>
