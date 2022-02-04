@@ -1,70 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import ForecastDay from "./ForecastDay";
+import axios from "axios";
 import "./Forecast.css";
 
-export default function Forecast() {
-  return (
-    <div className="Forecast">
-      <section className="forecast">
-        <div className="container">
-          <div className="row">
-            <div className="col predicted">
-              <div className="day">
-                <strong> Today </strong>
-              </div>
+export default function Forecast(props) {
+  let latitute = props.coordinates.lat;
+  let longitute = props.coordinates.lon;
+  let [ready, setReady] = useState(false);
+  let [forecast, setForecast] = useState(" ");
 
-              <div className="weatherEmoji">⛅️</div>
-              <div className="highlow">
-                <span>
-                  <strong>
-                    {" "}
-                    <span> 12</span>°{" "}
-                  </strong>
-                </span>
-                <span>
-                  {" "}
-                  <span> 8</span>°
-                </span>
-              </div>
-            </div>
-            <div className="col predicted">
-              <div className="day">Tommorrow</div>
+  function showForecast(response) {
+    setForecast(response.data.daily);
 
-              <div className="weatherEmoji">🌤</div>
-              <div className="highlow">
-                <strong> 19° </strong>
-                13°
-              </div>
-            </div>
-            <div className="col predicted">
-              <div className="day">Monday</div>
+    setReady(true);
+  }
+  console.log(forecast);
 
-              <div className="weatherEmoji">☀️</div>
-              <div className="highlow">
-                <strong> 17° </strong>
-                11°
-              </div>
-            </div>
-            <div className="col predicted">
-              <div className="day">Tuesday</div>
-
-              <div className="weatherEmoji">🌧</div>
-              <div className="highlow">
-                <strong> 13° </strong>
-                9°
-              </div>
-            </div>
-            <div className="col predicted">
-              <div className="day">Wednesday</div>
-
-              <div className="weatherEmoji">🌧</div>
-              <div className="highlow">
-                <strong> 15° </strong>
-                9°
-              </div>
+  if (ready) {
+    return (
+      <div className="Forecast">
+        <section className="forecast">
+          <div className="container">
+            <div className="row">
+              <ForecastDay forecast={forecast} />
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
+        </section>
+      </div>
+    );
+  } else {
+    let apiKey = "f6ac59a63eb6c11f9c97a0f9c5fb1033";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitute}&lon=${longitute}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showForecast);
+
+    return null;
+  }
 }

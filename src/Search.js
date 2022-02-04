@@ -12,6 +12,7 @@ export default function Search() {
   function showWeather(response) {
     setWeather({
       city: response.data.name,
+      coordinates: response.data.coord,
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
       feelsLike: Math.round(response.data.main.feels_like),
@@ -53,7 +54,7 @@ export default function Search() {
           <input type="submit" value=" 📍 " />
         </form>
         <Weatherdisplay weather={weather} />
-        <Forecast />
+        <Forecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
@@ -70,7 +71,7 @@ export default function Search() {
           <input type="submit" value=" 📍 " />
         </form>
         <br />
-        Loading...
+        <div className="loadingScreen"> Loading...</div>
       </div>
     );
   }
