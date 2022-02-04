@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ForecastDay from "./ForecastDay";
 import axios from "axios";
-import "./Forecast.css";
 
 export default function Forecast(props) {
   let latitute = props.coordinates.lat;
@@ -9,11 +8,14 @@ export default function Forecast(props) {
   let [ready, setReady] = useState(false);
   let [forecast, setForecast] = useState(" ");
 
+  useEffect(() => {
+    setReady(false);
+  }, [props.coordinates]);
+
   function showForecast(response) {
     setForecast(response.data.daily);
     setReady(true);
   }
-  console.log(forecast);
 
   if (ready) {
     return (

@@ -53,13 +53,14 @@ li {
   padding: 7px 5px;
   text-align: center;
   line-height: 1.25;
+  font-size: 16px;
 }
 
 .measurment {
   font-size: 22px;
   font-weight: bolder;
   position: relative;
-  left: -9px;
+  left: -8px;
   top: -41px;
   color: #92a759;
 }
