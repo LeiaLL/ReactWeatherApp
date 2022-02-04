@@ -1,7 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
-import UnitConversion from "./UnitConversion";
 import "./Weatherdisplay.css";
 
 export default function Weatherdisplay(props) {
@@ -22,20 +21,19 @@ export default function Weatherdisplay(props) {
                 {props.weather.description}
               </span>
             </p>
-            <br />
+
             <h1>
-              <span className="current-weater-icon">
-                {" "}
-                <WeatherIcon
-                  icon={props.weather.icon}
-                  description={props.weather.description}
-                />
-              </span>
               <strong>
-                <span>
-                  <UnitConversion temperature={props.weather.temperature} />
+                <span className="current-weather-icon">
+                  {" "}
+                  <WeatherIcon
+                    icon={props.weather.icon}
+                    description={props.weather.description}
+                  />
                 </span>
+                <span>{props.weather.temperature}</span>
               </strong>
+              <span className="measurment"> °C </span>
             </h1>
           </section>
         </div>

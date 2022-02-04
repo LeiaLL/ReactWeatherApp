@@ -22,7 +22,16 @@ export default function Forecast(props) {
         <section className="forecast">
           <div className="container">
             <div className="row">
-              <ForecastDay forecast={forecast} />
+              {forecast.map(function (dailyForecast, index) {
+                if (index < 5) {
+                  return (
+                    <div className="col predicted" key={index}>
+                      {" "}
+                      <ForecastDay forecast={forecast} />
+                    </div>
+                  );
+                }
+              })}
             </div>
           </div>
         </section>

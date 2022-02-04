@@ -2,7 +2,7 @@ h1 {
   font-size: 80px;
   margin: 0px 0px 0px 0px;
   position: relative;
-  top: -20px;
+  top: -8px;
 }
 
 h5 {
@@ -10,9 +10,9 @@ h5 {
   font-size: 35px;
 }
 
-.current-weater-icon {
+.current-weather-icon {
   font-size: 90px;
-  padding-right: 5px;
+  padding-right: 11px;
 }
 p {
   line-height: 1.25;
@@ -45,4 +45,13 @@ li {
   padding: 7px 5px;
   text-align: center;
   line-height: 1.25;
+}
+
+.measurment {
+  font-size: 22px;
+  font-weight: bolder;
+  position: relative;
+  left: -12px;
+  top: -41px;
+  color: #92a759;
 }
