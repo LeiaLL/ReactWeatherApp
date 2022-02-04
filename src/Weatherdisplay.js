@@ -30,7 +30,7 @@ export default function Weatherdisplay(props) {
                     description={props.weather.description}
                   />
                 </span>
-                <span>{props.weather.temperature}</span>
+                <span className="temperature">{props.weather.temperature}</span>
                 <span className="measurment"> °C </span>
               </strong>
             </h1>

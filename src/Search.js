@@ -40,6 +40,24 @@ export default function Search() {
     setCity(event.target.value);
   }
 
+  function useLocation(response) {
+    console.log(response);
+    let latitude = response.coords.latitude;
+    console.log(latitude);
+    let longitude = response.coords.longitude;
+    console.log(longitude);
+
+    let apiKey = "f6ac59a63eb6c11f9c97a0f9c5fb1033";
+    let apiUrlByCoords = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrlByCoords).then(showWeather);
+  }
+
+  function getLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(useLocation);
+  }
+
   if (ready) {
     return (
       <div className="Navbar">
@@ -51,7 +69,7 @@ export default function Search() {
             onChange={handelChange}
           />
           <input className="searchbutton" type="submit" value=" 🔎 " />
-          <input type="submit" value=" 📍 " />
+          <input type="submit" value=" 📍 " onClick={getLocation} />
         </form>
         <Weatherdisplay weather={weather} />
         <Forecast coordinates={weather.coordinates} />
@@ -68,7 +86,7 @@ export default function Search() {
             onChange={handelChange}
           />
           <input className="searchbutton" type="submit" value=" 🔎 " />
-          <input type="submit" value=" 📍 " />
+          <input type="submit" value=" 📍 " onClick={getLocation} />
         </form>
         <br />
         <div className="loadingScreen"> Loading...</div>

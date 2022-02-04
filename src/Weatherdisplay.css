@@ -1,8 +1,8 @@
 h1 {
-  font-size: 80px;
+  font-size: 81px;
   margin: 0px 0px 0px 0px;
   position: relative;
-  top: 3px;
+  top: 6px;
 }
 
 h5 {
@@ -10,8 +10,13 @@ h5 {
   font-size: 35px;
 }
 
+.temperature {
+  position: relative;
+  top: -14px;
+}
+
 .current-weather-icon {
-  font-size: 90px;
+  font-size: 89px;
   padding-right: 11px;
 }
 p {
@@ -61,6 +66,6 @@ li {
   font-weight: bolder;
   position: relative;
   left: -8px;
-  top: -41px;
+  top: -56px;
   color: #92a759;
 }
