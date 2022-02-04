@@ -11,7 +11,6 @@ export default function Forecast(props) {
 
   function showForecast(response) {
     setForecast(response.data.daily);
-
     setReady(true);
   }
   console.log(forecast);
@@ -27,9 +26,11 @@ export default function Forecast(props) {
                   return (
                     <div className="col predicted" key={index}>
                       {" "}
-                      <ForecastDay forecast={forecast} />
+                      <ForecastDay forecast={dailyForecast} index={index} />
                     </div>
                   );
+                } else {
+                  return null;
                 }
               })}
             </div>

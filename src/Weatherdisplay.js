@@ -21,7 +21,6 @@ export default function Weatherdisplay(props) {
                 {props.weather.description}
               </span>
             </p>
-
             <h1>
               <strong>
                 <span className="current-weather-icon">
@@ -32,8 +31,8 @@ export default function Weatherdisplay(props) {
                   />
                 </span>
                 <span>{props.weather.temperature}</span>
+                <span className="measurment"> °C </span>
               </strong>
-              <span className="measurment"> °C </span>
             </h1>
           </section>
         </div>
