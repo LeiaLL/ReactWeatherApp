@@ -1,23 +1,22 @@
 body {
-  background-color: rgb(212, 236, 221, 0.8);
+  background-color: rgba(95, 184, 189, 0.123);
 }
-
 header {
   padding: 60px 20px 20px 30px;
 }
 
 strong {
-  color: #92a759;
+  color: rgb(45, 140, 143);
 }
 
 .card {
   border-radius: 15px;
-  box-shadow: 5px 5px 5px rgba(107, 105, 105, 0.9);
+  box-shadow: 7px 7px 7px rgba(107, 105, 105, 0.9);
   padding: 20px 30px 20px 30px;
   width: 800px;
   height: 550px;
   max-width: 55%;
   font-family: monospace;
-  border: 3px solid #92a759;
+  border: 3px solid rgba(95, 158, 160, 0.781);
   margin: 0 auto;
 }

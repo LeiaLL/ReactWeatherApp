@@ -53,7 +53,7 @@ ul {
 
 li {
   border-radius: 15px;
-  background: rgb(212, 236, 221, 0.8);
+  background: rgba(95, 158, 160, 0.25);
   margin: 10px;
   padding: 7px 5px;
   text-align: center;
@@ -67,5 +67,5 @@ li {
   position: relative;
   left: -8px;
   top: -46px;
-  color: #92a759;
+  color: cadetblue;
 }

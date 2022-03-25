@@ -3,7 +3,7 @@ input {
   margin: 10px 5px 0;
   font-size: 18px;
   line-height: 2;
-  border: 2px solid #92a759;
+  border: 2px solid rgba(95, 158, 160, 0.705);
   border-radius: 5px;
   padding: 2px;
 }
@@ -15,4 +15,376 @@ input {
   text-align: center;
   margin-top: 40px;
   font-size: 25px;
+}
+.mountainScenery {
+  background-color: rgba(95, 158, 160, 0.349);
+  height: 406px;
+  border-radius: 15px;
+  animation: sky 12s infinite;
+}
+
+@keyframes sky {
+  0% {
+    background-color: rgba(95, 158, 160, 0.61);
+  }
+
+  50% {
+    background-color: rgba(95, 158, 160, 0.28);
+  }
+
+  100% {
+    background-color: rgba(95, 158, 160, 0.61);
+  }
+}
+
+.mountain1 {
+  position: relative;
+  top: 290px;
+  left: 100px;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 110px solid red;
+  transform: scale(1.1);
+  animation: darkf 12s infinite;
+}
+
+@keyframes darkf {
+  0% {
+    border-bottom: 110px solid rgb(163, 10, 10);
+  }
+
+  50% {
+    border-bottom: 110px solid red;
+  }
+
+  100% {
+    border-bottom: 110px solid rgb(163, 10, 10);
+  }
+}
+
+.mountain2 {
+  position: relative;
+  top: -37px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 140px solid brown;
+  transform: scale(1.1);
+  animation: darks 12s infinite;
+}
+
+@keyframes darks {
+  0% {
+    border-bottom: 140px solid rgb(90, 14, 14);
+  }
+
+  50% {
+    border-bottom: 140px solid brown;
+  }
+
+  100% {
+    border-bottom: 140px solid rgb(90, 14, 14);
+  }
+}
+
+.mountain3 {
+  position: relative;
+  top: -209px;
+  left: 65px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 170px solid orange;
+  z-index: -1;
+  transform: scale(1.1);
+  animation: darkt 12s infinite;
+}
+
+@keyframes darkt {
+  0% {
+    border-bottom: 170px solid rgb(155, 104, 9);
+  }
+
+  50% {
+    border-bottom: 170px solid orange;
+  }
+
+  100% {
+    border-bottom: 170px solid rgb(155, 104, 9);
+  }
+}
+
+.mountain4 {
+  position: relative;
+  top: -305px;
+  left: 215px;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid rgb(126, 37, 37);
+  transform: scale(1.1);
+  animation: darkl 12s infinite;
+}
+
+@keyframes darkl {
+  0% {
+    border-bottom: 100px solid rgb(44, 13, 13);
+  }
+
+  50% {
+    border-bottom: 100px solid rgb(129, 32, 32);
+  }
+
+  100% {
+    border-bottom: 100px solid rgb(44, 13, 13);
+  }
+}
+
+.sun {
+  position: relative;
+  top: -355px;
+  left: 205px;
+  width: 53px;
+  height: 53px;
+
+  border-radius: 50%;
+  z-index: -2;
+  animation: rise 12s infinite;
+}
+
+@keyframes rise {
+  10% {
+    background-color: rgba(221, 188, 126, 0.76);
+  }
+
+  50% {
+    background-color: yellow;
+    transform: translateY(-270px);
+  }
+
+  90% {
+    background-color: rgba(221, 188, 126, 0.76);
+  }
+}
+
+.cloud1 {
+  background-color: #f7f2f2;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: relative;
+  top: -630px;
+  left: -50px;
+  animation: movef 10s linear infinite;
+}
+
+.cloud1 .circle1 {
+  background-color: #f7f2f2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 17px;
+  left: 30px;
+}
+
+.cloud1 .circle2 {
+  background-color: #f7f2f2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+  left: -20px;
+}
+
+.cloud1 .circle3 {
+  background-color: #f7f2f2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: -65px;
+  left: -35px;
+}
+
+.cloud1 .base1 {
+  background-color: #f7f2f2;
+  width: 76px;
+  height: 20px;
+  position: relative;
+  top: -83px;
+  left: -20px;
+  border-radius: 0 0 15% 15%;
+}
+
+@keyframes movef {
+  0% {
+    opacity: 30%;
+  }
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 30%;
+    transform: translateX(330px);
+  }
+}
+.cloud2 {
+  background-color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: relative;
+  top: -665px;
+  left: -15px;
+  animation: moves 12s linear infinite;
+}
+
+.cloud2 .circle1 {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 17px;
+  left: 30px;
+}
+
+.cloud2 .circle2 {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+  left: -20px;
+}
+
+.cloud2 .circle3 {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: -65px;
+  left: -35px;
+}
+
+.cloud2 .base1 {
+  background-color: #fff;
+  width: 76px;
+  height: 20px;
+  position: relative;
+  top: -83px;
+  left: -20px;
+  border-radius: 0 0 15% 15%;
+}
+
+@keyframes moves {
+  0% {
+    opacity: 0%;
+    transform: scale(0.7);
+  }
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    transform: translateX(290px) scale(0.7);
+  }
+}
+
+.cloud3 {
+  background-color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: relative;
+  top: -825px;
+  left: 250px;
+
+  animation: movet 10s linear infinite;
+}
+
+.cloud3 .circle1 {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 27px;
+}
+
+.cloud3 .circle2 {
+  background-color: #fff;
+  width: 50px;
+  height: 49px;
+  border-radius: 50%;
+  position: relative;
+  top: -27px;
+  left: -22px;
+}
+
+.cloud3 .circle3 {
+  background-color: #fff;
+  width: 30px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  top: -59px;
+  left: -29px;
+}
+
+.cloud3 .circle4 {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: -98px;
+  left: 43px;
+}
+
+.cloud3 .base2 {
+  background-color: #fff;
+  width: 89px;
+  height: 20px;
+  position: relative;
+  top: -118px;
+  left: -23px;
+  border-radius: 0 0 15% 30%;
+}
+
+@keyframes movet {
+  0% {
+    opacity: 0%;
+    transform: scale(0.8);
+  }
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    transform: translateX(-290px) scale(0.8);
+  }
 }

@@ -89,7 +89,35 @@ export default function Search() {
           <input type="submit" value=" 📍 " onClick={getLocation} />
         </form>
         <br />
-        <div className="loadingScreen"> Loading...</div>
+        <div class="mountainScenery">
+          <div class="mountain1">
+            <div class="mountain2"></div>
+            <div class="mountain3"></div>
+            <div class="mountain4"></div>
+            <div class="sun"></div>
+            <div class="cloud1">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+              <div class="base1"></div>
+            </div>
+            <div class="cloud2">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+              <div class="base1"></div>
+            </div>
+            <div class="cloud3">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+              <div class="circle4"></div>
+              <div class="base2"></div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

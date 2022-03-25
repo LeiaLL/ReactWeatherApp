@@ -4,3 +4,9 @@
   color: #5a6275;
   font-family: "Poppins", sans-serif;
 }
+
+.signature a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
