@@ -25,15 +25,15 @@ input {
 
 @keyframes sky {
   0% {
-    background-color: rgba(95, 158, 160, 0.61);
+    background-color: rgba(95, 158, 160, 0.906);
   }
 
   50% {
-    background-color: rgba(95, 158, 160, 0.28);
+    background-color: rgba(95, 158, 160, 0.23);
   }
 
   100% {
-    background-color: rgba(95, 158, 160, 0.61);
+    background-color: rgba(95, 158, 160, 0.906);
   }
 }
 
