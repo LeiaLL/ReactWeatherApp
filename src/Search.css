@@ -150,12 +150,101 @@ input {
   position: relative;
   top: -355px;
   left: 205px;
-  width: 53px;
-  height: 53px;
-
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   z-index: -2;
   animation: rise 12s infinite;
+  transform: scale(0.8);
+}
+
+.sunray {
+  height: 4px;
+  width: 27px;
+  border-radius: 30%;
+  animation: rays 12s infinite;
+}
+
+.ray1 {
+  position: relative;
+  top: 20px;
+  left: -32px;
+}
+
+.ray2 {
+  position: relative;
+  top: 16px;
+  left: 47px;
+}
+
+.ray3 {
+  position: relative;
+  top: 52px;
+  left: 7px;
+  transform: rotate(90deg);
+}
+
+.ray4 {
+  position: relative;
+  top: -33px;
+  left: 7px;
+  transform: rotate(90deg);
+}
+
+.ray5 {
+  position: relative;
+  top: -16px;
+  left: -28px;
+  transform: rotate(30deg);
+}
+
+.ray6 {
+  position: relative;
+  top: 20px;
+  left: -27px;
+  transform: rotate(-30deg);
+}
+
+.ray7 {
+  position: relative;
+  top: -24px;
+  left: 43px;
+  transform: rotate(-30deg);
+}
+
+.ray8 {
+  position: relative;
+  top: 12px;
+  left: 42px;
+  transform: rotate(30deg);
+}
+
+.ray9 {
+  position: relative;
+  top: 23px;
+  left: 28px;
+  transform: rotate(60deg);
+}
+
+.ray10 {
+  position: relative;
+  top: -52px;
+  left: -13px;
+  transform: rotate(60deg);
+}
+
+.ray11 {
+  position: relative;
+  top: 17px;
+  left: -12px;
+  transform: rotate(-60deg);
+}
+
+.ray12 {
+  position: relative;
+  top: -61px;
+  left: 29px;
+  transform: rotate(-60deg);
 }
 
 @keyframes rise {
@@ -165,11 +254,33 @@ input {
 
   50% {
     background-color: yellow;
-    transform: translateY(-270px);
+    transform: translateY(-270px) scale(0.8);
   }
 
   90% {
     background-color: rgba(221, 188, 126, 0.76);
+  }
+
+  100% {
+    background-color: rgba(221, 188, 126, 0);
+  }
+}
+
+@keyframes rays {
+  2% {
+    background-color: rgba(221, 188, 126, 0);
+  }
+
+  15% {
+    background-color: rgba(221, 188, 126, 0.76);
+  }
+
+  50% {
+    background-color: yellow;
+  }
+
+  95% {
+    background-color: rgba(221, 188, 126, 0);
   }
 }
 

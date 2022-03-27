@@ -94,7 +94,20 @@ export default function Search() {
             <div class="mountain2"></div>
             <div class="mountain3"></div>
             <div class="mountain4"></div>
-            <div class="sun"></div>
+            <div class="sun">
+              <div class="sunray ray1"></div>
+              <div class="sunray ray2"></div>
+              <div class="sunray ray3"></div>
+              <div class="sunray ray4"></div>
+              <div class="sunray ray5"></div>
+              <div class="sunray ray6"></div>
+              <div class="sunray ray7"></div>
+              <div class="sunray ray8"></div>
+              <div class="sunray ray9"></div>
+              <div class="sunray ray10"></div>
+              <div class="sunray ray11"></div>
+              <div class="sunray ray12"></div>
+            </div>
             <div class="cloud1">
               <div class="circle1"></div>
               <div class="circle2"></div>
