@@ -29,8 +29,8 @@ Alternatively, view a deployed version of this project on Netlify here: [https:/
 
 This project was built with HTML, CSS, JavaScript, and React.js and uses Bootstrap. To learn more about [Bootstrap.]( https://getbootstrap.com).
 
-This project was bootstrapped with [Create React App.] (https://github.com/facebook/create-react-app)
+This project was bootstrapped with [Create React App.](https://github.com/facebook/create-react-app)
 
-You can learn more in the Create React App documentation. [Create React App documentation.] (https://create-react-app.dev/docs/getting-started/)
+You can learn more in the Create React App documentation. [Create React App documentation.](https://create-react-app.dev/docs/getting-started/)
 
 To learn React, check out the [React documentation.]( https://reactjs.org)
