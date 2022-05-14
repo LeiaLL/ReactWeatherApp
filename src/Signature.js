@@ -13,11 +13,7 @@ export default function Signature() {
         Github
       </a>{" "}
       by{" "}
-      <a
-        href="https://www.linkedin.com/in/lea-lüders-71866719b/s"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href="lealueders.eu" target="_blank" rel="noreferrer">
         {" "}
         Lea Lüders{" "}
       </a>
